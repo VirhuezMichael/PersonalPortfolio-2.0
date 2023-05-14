@@ -24,7 +24,7 @@ const Contact = () => {
         body: JSON.stringify({ nombre, email, mensaje }),
       });
       if (response.ok) {
-        console.log("Correo electrónico enviado exitosamente");
+        console.log("The message was sended correctly");
         setNombre ("")
         setEmail ("")
         setMensaje ("")
@@ -33,7 +33,7 @@ const Contact = () => {
 
         // Aquí puedes realizar cualquier acción adicional que desees, como mostrar un mensaje de éxito
       } else {
-        console.error("Error al enviar el correo electrónico");
+        console.error("Error to try send the message");
         // Aquí puedes manejar el caso de error, por ejemplo, mostrar un mensaje de error
       }
     } catch (error) {
@@ -70,7 +70,7 @@ const Contact = () => {
           value={mensaje}
           onChange={(e) => setMensaje(e.target.value)}
         />
-        <ContactButton type="submit">Send</ContactButton>
+        <ContactButton type="submit" onClick={handleSubmit}>Send</ContactButton>
       </ContactForm>
       <div>
       {/* Renderizar el formulario */}
@@ -123,7 +123,7 @@ const ContactInput = styled.input`
   border-radius: 5px;
   border: none;
   width: 100%;
-  color: #ece3da;
+  color: #131313;
 `;
 
 const ContactTextArea = styled.textarea`
