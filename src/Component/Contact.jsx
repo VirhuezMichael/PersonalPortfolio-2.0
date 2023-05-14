@@ -15,7 +15,7 @@ const Contact = () => {
     e.preventDefault();
     // Enviar solicitud POST al servidor Node.js
     try {
-      const response = await fetch("http://localhost:3000/enviar-correo", {
+      const response = await fetch("http://virhuez-portfolio-production.up.railway.app/enviar-correo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
