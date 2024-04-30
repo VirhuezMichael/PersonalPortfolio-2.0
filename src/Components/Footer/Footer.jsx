@@ -61,13 +61,13 @@ const Footer = () => {
   return (
     <StyledFooter>
       <StyledSocialIcons>
-        <StyledIconLink href="https://www.linkedin.com/in/walter-michael-virhuez-37a48b212/?locale=en_US" target="_blank">
+        <StyledIconLink href="https://www.linkedin.com/in/walter-michael-virhuez-37a48b212/?locale=en_US" target="_blank" title="linkedin">
           <LinkedInIcon />
         </StyledIconLink>
-        <StyledIconLink href="https://www.whatsapp.com/" target="_blank">
+        <StyledIconLink href="https://www.whatsapp.com/" target="_blank" title="whatsapp">
           <WhatsAppIcon />
         </StyledIconLink>
-        <StyledIconLink href="https://www.github.com/VirhuezMichael" target="_blank">
+        <StyledIconLink href="https://www.github.com/VirhuezMichael" target="_blank" title="github">
           <GitHubIcon />
         </StyledIconLink>
       </StyledSocialIcons>
