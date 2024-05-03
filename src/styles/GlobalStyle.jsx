@@ -8,10 +8,16 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1000px;
     margin: auto;
     text-align: center;
+    @media (max-width: 768px) {
+      max-widht: 100vw;
+    }
   }
 
   body {
     background: linear-gradient(135deg, #9aaad6, #eef4fc);
+    @media (max-width: 768px) {
+      max-widht: 100vw;
+    }
   }
 
   a {

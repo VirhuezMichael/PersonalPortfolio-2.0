@@ -24,6 +24,9 @@ border-radius: 25px;
 background-color: rgba(201, 219, 239, 0.2);
 padding-top: 2px;
 padding-bottom: 4px;
+@media (max-width: 768px) {
+  margin-bottom: 20px;
+}
 `;
 
 const ProjectWrapper = styled.div`

@@ -27,7 +27,7 @@ const Icon = styled.div`
   height: 40px;
   margin-right: 8px;
 `
-const CardDetail = styled.a`
+const CardDetail = styled.div`
   display: none;
   flex-direction: column;
   background: linear-gradient(135deg, #1D2A3F, #9aaad6);
@@ -53,12 +53,26 @@ const CardDetail = styled.a`
     `
     display: none; 
   `}
+  @media (max-width: 768px) {
+    max-width: 98vw;
+    height: 450px;
+    flex-direction: row;
+    padding: 0;
+    margin: 5px;
+  }
+  
 `
 const DetailContainer = styled.div`
 width: 956px;
 height: 304px;
 display: flex;
 flex-direction: row;
+@media (max-width: 768px) {
+  max-width: 98vw;
+  flex-direction: column;
+  padding: 0;
+  margin: 5px;
+}
 `
 const Detail = styled.div`
   width: 35%;
@@ -66,14 +80,22 @@ const Detail = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-left: 20px;
+  @media (max-width: 768px) {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    justify-content: start;
+  }
 `
-
 const Description = styled.div`
   width: 65%;
   padding-top:10px;
   padding-right: 20px;
   color: #c9dbef;
   display: grid;
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
 `
 const Paragraph = styled.p`
 white-space: pre-line;
@@ -81,6 +103,14 @@ font-size:14px;
 font-family: 'Monaco', monospace;
 text-align:left;
 margin-top: 10px;
+@media (max-width: 768px) {
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 25px;
+  font-size: 13px;
+  width: 100vw;
+  text-align: left;
+}
 `
 const Item = styled.p`
 font-family: 'Monaco', monospace;
@@ -93,6 +123,11 @@ display: flex;
 flex-direction: row;
 margin-left:50px;
 padding:15px;
+@media (max-width: 768px) {
+  margin-left: 0px;
+  text-align: left;
+  padding: 5px;
+}
 `
 const TitleItem = styled.p`
 color: #00FFFF;
@@ -125,15 +160,31 @@ const ExperienceCard = styled.article`
     `
     display: flex; 
   `}
+  @media (max-width: 768px) {
+    max-width: 98vw;
+    height:450px;
+    padding: 0;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 const ExperienceImageCard = styled.div`
-  width: 600px;
+width: 600px;
+@media (max-width: 768px) {
+  width: 100vw;
+}
 `
 const ExperienceImage = styled.img`
   width: 550px;
   height: 300px;
   background-size: cover;
   padding: 10px;
+  @media (max-width: 768px) {
+    width: 350px;
+    height: 200px;
+  }
+  
 `
 const ExperienceContent = styled.div`
   display: flex;
@@ -147,12 +198,19 @@ const ExperienceDescription = styled.p`
   margin-bottom: 20px;
   text-align: left;
   display: block;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 `
 const IconContainer = styled.div`
   height: 50px;
   display: flex;
   flex-direction: wrap;
   justify-content: flex-start;
+  @media (max-width: 768px) {
+    height: 40px;
+  }
 `
 const iconColors = {
   SiCsharp: '#68217A',

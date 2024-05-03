@@ -7,6 +7,10 @@ import Card from './Card';
 const ExperienceContainer = styled.div`
   padding: 10px 0;
   background-color: #1D2A3F;
+  @media (max-width: 768px) {
+    max-width: 100vw;
+    padding:5px 0;
+  }
 `;
 
 const ExperienceTitle = styled.h2`
@@ -20,13 +24,21 @@ const ExperienceTitle = styled.h2`
   border-radius: 25px;
   background-color: rgba(201, 219, 239, 0.2);
   padding-top: 2px;
-padding-bottom: 4px;
+  padding-bottom: 4px;
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+  
 `;
 
 const ExperienceWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (max-width: 768px) {
+    justify-content:: flex-start;
+  }
+  
 `;
 
 const experience = [
@@ -41,7 +53,7 @@ const experience = [
     date: "2023 - Actual",
     // eslint-disable-next-line no-multi-str
     responsability: `I am responsible, along with the development team, for carrying out the tasks required for the implementation of the application from its inception. These tasks include: backend and frontend development and monitoring using development tools such as Visual Studio in .NET language, Mercurial for version control, Razor for UI/UX development, SQL Express for database implementation managing its handling with Entity Framework and a data migration system, among others.
-I also want to highlight the use of SOLID principles for application development using an MVC system, multiple data structures, and the use and implementation of dependency injection, as well as the use of both proprietary and external NuGet packages and a modular design.
+I also want to highlight the use of SOLID principles for application development using an MVC system, design patterns, and the use and implementation of dependency injection, as well as the use of both proprietary and external NuGet packages and a modular design.
 Additionally, I emphasize that I have been responsible for researching and configuring all required email protocols following the directives of RFC documents.`,
     name: "Full Stack Developer"
   },
