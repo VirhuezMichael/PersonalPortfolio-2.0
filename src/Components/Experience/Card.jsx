@@ -61,7 +61,7 @@ const CardDetail = styled.div`
     margin: 5px;
   }
   @media (max-width: 480px) {
-    height: 515px;
+    height: 530px;
   }
 `
 const DetailContainer = styled.div`
