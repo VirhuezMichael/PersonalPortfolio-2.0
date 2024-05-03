@@ -60,7 +60,9 @@ const CardDetail = styled.div`
     padding: 0;
     margin: 5px;
   }
-  
+  @media (max-width: 480px) {
+    height: 515px;
+  }
 `
 const DetailContainer = styled.div`
 width: 956px;

@@ -100,6 +100,17 @@ const NavIcon = styled.button`
     font-size: 2rem;
     outline: none;
   }
+  @media (max-width: 480px) {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+  }
 `;
 
 const Navbar = () => {

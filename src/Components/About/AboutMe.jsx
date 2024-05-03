@@ -19,14 +19,31 @@ const AboutContent = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
+  @media (max-width: 480px) {
+    padding:5px;
+  }
 `;
-
+const Email = styled.p`
+text-align: left;
+padding-left: 30px;
+color:#fffafc;
+font-size:24px;
+@media (max-width: 480px) {
+  font-size: 1.2rem;
+  text-align: center;
+}
+`
 const AboutTitle = styled.h2`
   font-size: 2.5rem;
   margin-bottom: .5rem;
   color: #86868b;
   @media (max-width: 768px) {
     font-size: 1.8rem;
+    padding: 10px;
+    margin-bottom:0;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
     padding: 10px;
     margin-bottom:0;
   }
@@ -59,6 +76,10 @@ const AboutDescription = styled.p`
     padding: 20px;
     margin-bottom: 1rem;
   }
+  @media (max-width: 768px) {
+    padding: 10px;
+    margin-bottom: 0.8rem;
+  }
 `;
 
 const ImgProfile = styled.img`
@@ -90,7 +111,7 @@ const About = () => {
         <AboutDescription>
         With extensive experience in development, I am committed to providing innovative and high-quality solutions. My passion for technology and my ability to effectively collaborate in teams allow me to contribute significantly to diverse projects. Always in search of stimulating challenges, I am ready to take on new projects and exceed expectations.
         </AboutDescription>
-        <p style={{textAlign:"left", paddingLeft:"30px", color:"#fffafc", fontSize:"24px"}}>virhuezmichael@gmail.com</p>
+        <Email>virhuezmichael@gmail.com</Email>
         </div>
       </AboutContent>
     </AboutSection>
