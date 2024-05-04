@@ -43,7 +43,7 @@ const Gallery = styled.div`
       gap: 1rem;
     }
 `
-const Card = styled.figure`
+const Card = styled.a`
 position: relative;
 left: 0;
 width: 12rem;
@@ -108,13 +108,6 @@ const projects = [
       title: "Landing Page",
       description:"Main page of a company dedicated to providing web and software solutions to companies that need it. To do it I used development tools that help its functionality such as React-scroll and nodemailer so that contact messages are sent to the company's email." ,
       icons: [FaReact, SiNodedotjs, SiExpress, SiJavascript, SiHtml5, SiCss3]
-    },
-    {
-      href: "https://wedev-sj.netlify.app/",
-      imageSrc: "./projects/wedev.jpg",
-      title: "Landing Page",
-      description:"Main page of a company dedicated to providing web and software solutions to companies that need it. To do it I used development tools that help its functionality such as React-scroll and nodemailer so that contact messages are sent to the company's email." ,
-      icons: [FaReact, SiNodedotjs, SiExpress, SiJavascript, SiHtml5, SiCss3]
     }
   ];
 
@@ -129,7 +122,7 @@ const ProjectGallery = () => {
           <ProjectWrapper>
             <Gallery>
             {projects.map((project, index) => (
-              <StyledCard key={index}>
+              <StyledCard key={index} href={project.href} target="_blank" title="See project" rel="noopener noreferrer">
                 <Img src={project.imageSrc} alt={`project ${index + 1}`} />
               </StyledCard>
             ))}
