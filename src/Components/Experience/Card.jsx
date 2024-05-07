@@ -55,13 +55,13 @@ const CardDetail = styled.div`
   `}
   @media (max-width: 768px) {
     max-width: 98vw;
-    height: 450px;
+    height: 480px;
     flex-direction: row;
     padding: 0;
     margin: 5px;
   }
   @media (max-width: 480px) {
-    height: 530px;
+    height: 550px;
   }
 `
 const DetailContainer = styled.div`

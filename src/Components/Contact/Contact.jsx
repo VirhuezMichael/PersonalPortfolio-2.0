@@ -15,7 +15,7 @@ const Contact = () => {
     e.preventDefault();
     // Enviar solicitud POST al servidor Node.js
     try {
-      const response = await fetch("https://virhuez-portfolio-production.up.railway.app/enviar-correo", {
+      const response = await fetch("https://portfoliobackend-9rqzk18wy-michaels-projects-404a3990.vercel.app/enviar-correo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,14 +31,14 @@ const Contact = () => {
 
         setCorreoEnviado(true);
 
-        // Aquí puedes realizar cualquier acción adicional que desees, como mostrar un mensaje de éxito
+        
       } else {
         console.error("Error to try send the message");
-        // Aquí puedes manejar el caso de error, por ejemplo, mostrar un mensaje de error
+        
       }
     } catch (error) {
       console.error(error);
-      // Aquí puedes manejar el caso de error, por ejemplo, mostrar un mensaje de error
+      
     }
   };
 
@@ -76,7 +76,6 @@ const Contact = () => {
         </ButtonContainer>
       </ContactForm>
       <div>
-      {/* Renderizar el formulario */}
       {correoEnviado && (
         <PopupContainer>
           <PopupContent>

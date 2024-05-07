@@ -187,7 +187,7 @@ const Navbar = () => {
           </NavLink>
         </NavItem>
         <NavItem>
-          <a href="./MVResume.pdf" target="_blank" style={{color:"#3f848c ", fontWeight:'bold'}}>
+          <a href="./Michael_Resume.pdf" target="_blank" style={{color:"#3f848c ", fontWeight:'bold'}}>
             My Resume
           </a>
         </NavItem>
