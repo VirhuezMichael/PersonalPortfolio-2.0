@@ -15,7 +15,7 @@ const Contact = () => {
     e.preventDefault();
     // Enviar solicitud POST al servidor Node.js
     try {
-      const response = await fetch("https://portfoliobackend-a58quztst-michaels-projects-404a3990.vercel.app/enviar-correo", {
+      const response = await fetch("https://portfoliobackend-ixicf5q4u-michaels-projects-404a3990.vercel.app/enviar-correo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
