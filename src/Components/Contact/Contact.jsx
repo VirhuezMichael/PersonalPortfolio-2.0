@@ -10,6 +10,7 @@ const Contact = () => {
   const [mensaje, setMensaje] = useState("");
 
   const [correoEnviado, setCorreoEnviado] = useState(false);
+  const [errorCorreo, setErrorCorreo] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -38,12 +39,13 @@ const Contact = () => {
       }
     } catch (error) {
       console.error(error);
-      
+      setCorreoEnviado(true);
     }
   };
 
   const handleClose = () => {
     setCorreoEnviado(false);
+    setErrorCorreo(false);
   };
 
   return (
@@ -79,8 +81,18 @@ const Contact = () => {
       {correoEnviado && (
         <PopupContainer>
           <PopupContent>
-            <h3>Menssage sended</h3>
-            <p>The mail has been sent successfully.</p>
+            <h3>The server it is not avaiable in this moment!</h3>
+            <p>Please send me an email directly to: virhuezmichael@gmail.com</p>
+            <button onClick={handleClose}>Close</button>
+          </PopupContent>
+        </PopupContainer>
+      )}
+    </div>
+    <div>
+    {errorCorreo && (
+        <PopupContainer>
+          <PopupContent>
+            <h3>Error Server</h3>
             <button onClick={handleClose}>Close</button>
           </PopupContent>
         </PopupContainer>
